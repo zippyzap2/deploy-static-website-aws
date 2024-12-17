@@ -55,9 +55,15 @@ Ensure you have the following tools installed:
 - Used to store website files (HTML, CSS, JS, images).
 - **Private** bucket with CloudFront access using OAC.
 
+<img width="500" alt="Screenshot 2024-12-17 at 4 59 58 PM" src="https://github.com/user-attachments/assets/80a621a9-29bb-4aa8-801f-2500ad505d58" />
+
+
 ### **CloudFront Distribution**
 - Acts as a Content Delivery Network (CDN) for the S3 bucket.
 - Configured with **Origin Access Control (OAC)** for secure access.
+
+  <img width="500" alt="Screenshot 2024-12-17 at 4 59 58 PM" src="https://github.com/user-attachments/assets/af0568e5-0a60-4499-ba9d-71757cde95a0" />
+
 
 ### **GitHub Actions**
 - Automated pipeline for deploying website files to S3 after a commit.
