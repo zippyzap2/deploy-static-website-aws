@@ -250,8 +250,11 @@ jobs:
 ## **6. Set Up GitHub Secrets**
 1. Go to your GitHub repository > Settings > Secrets and Variables > Actions.
 2. Add the following secrets:
-          - AWS_ACCESS_KEY_ID: Your AWS access key.
-          - AWS_SECRET_ACCESS_KEY: Your AWS secret key.
+   - AWS_ACCESS_KEY_ID: Your AWS access key.
+   - AWS_SECRET_ACCESS_KEY: Your AWS secret key.
+  
+     <img width="500" alt="Screenshot 2024-12-17 at 4 59 58 PM" src="https://github.com/user-attachments/assets/e02d9e52-d190-42cd-a188-1142f69edc0a" />
+
 
 ---
 
@@ -261,12 +264,19 @@ jobs:
    ```bash
    terraform init
    ```
+   <img width="500" alt="Screenshot 2024-12-17 at 2 16 43 PM" src="https://github.com/user-attachments/assets/92ccad56-8840-440d-8764-977f40b99cfb" />
+
 
 2. **Plan and Apply**:
    ```bash
    terraform plan
    terraform apply
    ```
+   <img width="500" alt="Screenshot 2024-12-17 at 2 16 07 PM" src="https://github.com/user-attachments/assets/09450f01-42f6-45ca-ada9-2508f92e1440" />
+
+   <img width="500" alt="Screenshot 2024-12-17 at 2 15 38 PM" src="https://github.com/user-attachments/assets/5466372e-ad33-43a0-8a89-51e651920df5" />
+
+
 
 3. **Push Code to GitHub**:
    Commit and push your website files to the `main` branch to trigger the GitHub Actions pipeline:
@@ -275,6 +285,8 @@ jobs:
    git commit -m "Deploy static website"
    git push origin main
    ```
+   <img width="500" alt="Screenshot 2024-12-17 at 5 02 05 PM" src="https://github.com/user-attachments/assets/d7d52853-feac-464f-a665-6c94dd1e5eb0" />
+
 
 ---
 
@@ -284,6 +296,11 @@ Access your website using the **CloudFront URL** from the Terraform output:
 ```plaintext
 https://<cloudfront_url>
 ```
+
+
+https://github.com/user-attachments/assets/4fe5a6d7-a39e-4877-8631-8085fde57635
+
+
 
 Verify:
 - Static content (HTML, CSS, JS) loads correctly.
